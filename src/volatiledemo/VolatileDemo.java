@@ -19,7 +19,8 @@ public class VolatileDemo {//VolatileDemo.class->jvm字节码
         for (int i = 1; i <=20; i++) {
             new Thread(()->{
                        for(int j = 1; j <=1000; j++){
-                           mythread01.addplus();
+                           mythread01.addplus();//不保证
+                           mythread01.addAtomic();//保证
                        }
                     },String.valueOf(i)).start();
         }
@@ -71,5 +72,10 @@ class Mythead{
 
     public void addplus(){
         this.number++;
+    }
+
+    AtomicInteger atomicInteger = new AtomicInteger();
+    public void addAtomic(){
+        atomicInteger.getAndIncrement();
     }
  }

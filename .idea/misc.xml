@@ -3,9 +3,6 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
-  <component name="ProjectDictionaryState">
-    <dictionary name="wangxi" />
-  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK">
     <output url="file:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home" />
   </component>
